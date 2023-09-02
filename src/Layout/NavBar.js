@@ -24,7 +24,7 @@ const NavBar = () => {
             <div className="extra-logo col-2">
               <NavLink className="nav-link" to="/">
                 <img
-                  src={`https://rdi-eg.ai/wp-content/uploads/2020/10/logo-white.png`}
+                  src={`https://rdi-eg.ai/wp-content/uploads/2020/10/logo-white-e1604579113422.png`}
                   alt="Extra Logo"
                 />
               </NavLink>

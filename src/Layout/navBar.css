@@ -30,7 +30,7 @@
   max-width: 1500px;
 }
 .extra-logo img {
-  width: auto;
+  width: 100px;
 }
 
 .lang-btn button {
@@ -60,7 +60,7 @@
 
 .nav-menu {
   display: flex;
-  justify-content: normal;
+  justify-content: flex-end;
   list-style: none;
   text-align: center;
   /* margin: auto; */

@@ -65,7 +65,7 @@ const NatiqPage = () => {
   };
 
   return (
-    <div className="container-lg">
+    <div className="container-lg pt-4">
       {loading && (
         <div className="loading-overlay">
           <div className="loading-indicator">Loading...</div>
@@ -73,7 +73,9 @@ const NatiqPage = () => {
       )}
       <div className={loading ? "dimmed" : ""}>
         <input type="text" value={inputText} onChange={handleInputChange} />
-        <button onClick={handleEchoClick}>Echo</button>
+        <button className="global--btn" onClick={handleEchoClick}>
+          Echo
+        </button>
         {output && (
           <div>
             <p>Output: {inputText}</p>
