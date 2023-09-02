@@ -1,7 +1,7 @@
 import React from "react";
 import HomePage from "../Pages/HomePage";
 import AboutPage from "../Pages/AboutPage";
-
+import NatiqPage from "../Pages/NatiqPage";
 const PagesData = [
   {
     path: "/",
@@ -18,10 +18,10 @@ const PagesData = [
     element: React.createElement(AboutPage),
     title: "AboutPage",
   },
-  // {
-  //   path: "towels",
-  //   element: React.createElement(Towels),
-  //   title: "Towels",
-  // },
+  {
+    path: "NatiqPage",
+    element: React.createElement(NatiqPage),
+    title: "Natiq",
+  },
 ];
 export default PagesData;

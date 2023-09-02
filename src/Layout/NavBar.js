@@ -13,13 +13,14 @@ const NavBar = () => {
 
   return (
     <div className="main-nav">
-      <div className="container-md">
+      <div className="container-lg">
         <div
           className={click ? "main-container" : ""}
           onClick={() => Close()}
         />
         <nav className="navbar" onClick={(e) => e.stopPropagation()}>
           <div className="nav-container col-12">
+            {/*  Navigation Logo */}
             <div className="extra-logo col-2">
               <NavLink className="nav-link" to="/">
                 <img
@@ -28,6 +29,7 @@ const NavBar = () => {
                 />
               </NavLink>
             </div>
+            {/* Navigation Page List */}
             <ul
               className={click ? "nav-menu active col-10" : "nav-menu col-10"}
             >
@@ -53,6 +55,18 @@ const NavBar = () => {
                   onClick={click ? handleClick : null}
                 >
                   About
+                </NavLink>
+              </li>
+
+              <li className="nav-item">
+                <NavLink
+                  to={{
+                    pathname: "/NatiqPage",
+                  }}
+                  className="nav-links"
+                  onClick={click ? handleClick : null}
+                >
+                  Natiq
                 </NavLink>
               </li>
             </ul>
