@@ -72,8 +72,9 @@ const NatiqPage = () => {
         </div>
       )}
       <div className={loading ? "dimmed" : ""}>
+        <p>Please Enter Text Here</p>
         <input type="text" value={inputText} onChange={handleInputChange} />
-        <button className="global--btn" onClick={handleEchoClick}>
+        <button className="natiq--btn" onClick={handleEchoClick}>
           Echo
         </button>
         {output && (

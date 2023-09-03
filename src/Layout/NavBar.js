@@ -34,7 +34,9 @@ const NavBar = () => {
               className={click ? "nav-menu active col-10" : "nav-menu col-10"}
             >
               <div className="nav-icon" onClick={handleClick}>
-                <i className={click ? "bi bi-x-circle" : "bi bi-list"}></i>
+                <i
+                  className={click ? "fa-solid fa-xmark" : "fa-solid fa-xmark"}
+                ></i>
               </div>
               <li className="nav-item">
                 <NavLink
@@ -71,7 +73,7 @@ const NavBar = () => {
               </li>
             </ul>
             <div className="nav-icon" onClick={handleClick}>
-              <i className={click ? "" : "bi bi-list"}></i>
+              <i className={click ? "" : "fa-solid fa-bars"}></i>
             </div>
           </div>
         </nav>
